@@ -1,6 +1,11 @@
 const button = document.getElementById("generateGrid");
 const grid = document.querySelector(".grid");
-
+const gridSize = 100
+/**
+ * 
+ * @param {*} quantity max dei numeri generati
+ * @returns ritorna un array della grandezza richiesta con numeri diversi tra loro
+ */
 const getRandomNumbers = (quantity) => {
     const array = [];
     while (array.length < quantity) {
@@ -20,14 +25,11 @@ const getRandomNumbers = (quantity) => {
 }
 
 
-
-
-
 function createGrid() {
-    const randomNumbers = getRandomNumbers(100)
+    const randomNumbers = getRandomNumbers(gridSize)
   this.setAttribute("disabled", "");
   console.log("entrato");
-  for (let i = 1; i <= 100; i++) {
+  for (let i = 1; i <= gridSize; i++) {
     const cell = createCell(randomNumbers[i-1]);
     grid.append(cell);
   }

@@ -5,6 +5,9 @@
 body {
     background-color: #323232;
 }
+header {
+    background-color: white;
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(10, var(--cellSize));
