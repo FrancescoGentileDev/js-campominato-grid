@@ -28,7 +28,7 @@ function createGrid() {
   this.setAttribute("disabled", "");
   console.log("entrato");
   for (let i = 1; i <= 100; i++) {
-    const cell = createCell(i);
+    const cell = createCell(randomNumbers[i-1]);
     grid.append(cell);
   }
 }
