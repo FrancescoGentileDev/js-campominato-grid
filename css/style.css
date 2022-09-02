@@ -1,0 +1,27 @@
+:root {
+    --cellSize: 85px
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, var(--cellSize));
+    grid-auto-rows: var(--cellSize);
+    align-content: center;
+    justify-content: center;
+}
+
+.cell {
+    background-color: aqua;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.pari {
+    background-color: red !important;
+}
+
+.dispari {
+    background-color: green;
+}
