@@ -5,6 +5,9 @@
 body {
     background-color: #323232;
 }
+header {
+    background-color: white;
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(10, var(--cellSize));
@@ -22,6 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     user-select: none;
+    cursor: pointer;
 }
 
 .pari {
