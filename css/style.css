@@ -1,6 +1,10 @@
 :root {
     --cellSize: 85px
 }
+
+body {
+    background-color: #323232;
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(10, var(--cellSize));
@@ -10,8 +14,10 @@
 }
 
 .cell {
-    background-color: aqua;
+    background-color: rgb(233, 233, 233);
     border: 1px solid black;
+    font-size: 1.3rem;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +25,7 @@
 }
 
 .pari {
-    background-color: red !important;
+    background-color: rgb(0, 225, 255) !important;
 }
 
 .dispari {

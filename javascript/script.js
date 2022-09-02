@@ -34,7 +34,8 @@ function createGrid() {
 }
 
 function clickedColor() {
-   this.classList.add((parseInt(this.innerText) % 2 === 0)? "pari" : "dispari")
+    this.classList.add((parseInt(this.innerText) % 2 === 0) ? "pari" : "dispari")
+    console.log(this.innerText)
  }
 
 
